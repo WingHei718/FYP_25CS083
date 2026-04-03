@@ -20,7 +20,7 @@ VSCode: Add "java.configuration.runtimes" in the settings.json
 
 <ins>Flutter (3.22.0)</ins>
 
-You may ownload from the official cite directly: https://docs.flutter.dev/install/archive
+You may download from the official cite directly: https://docs.flutter.dev/install/archive
 
 For better sdk management, you may also use flutter sidekick: https://github.com/leoafarias/sidekick
 
