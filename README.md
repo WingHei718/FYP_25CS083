@@ -2,6 +2,9 @@
 
 ## Installation & Requirements
 
+<ins>Android SDK:</ins>
+Android 16.0, Android SDK Build-Tools 36.0.0
+
 <ins>Check Installed Java:</ins>
 
 Windows: Navigate to C:\Program Files\Java\ and C:\Program Files (x86)\Java\
