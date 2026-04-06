@@ -1,9 +1,10 @@
 # FYP_25CS083
 
+This is the repository of a final year project. The Android application demostrates a virtual try-on feature with 3D virtual rings.
+
 ## Installation & Requirements
 
 <ins>Android SDK:</ins>
-Android 16.0, Android SDK Build-Tools 36.0.0
 
 <ins>Check Installed Java:</ins>
 
@@ -21,6 +22,15 @@ Android Studio: Settings -> Build, Execution, Deployment -> Build Tools -> Gradl
 
 VSCode: Add "java.configuration.runtimes" in the settings.json
 
+
+**JDK 17 is preferable, you may also need to modify android/app/build.gradle if needed
+
+For example: 
+
+modify the compileSdk, jvmTarget in the kotlinOptions block, sourceCompatibility & targetCompatibility in the compileOptions block to match all versions
+
+Using Android 16.0 & Android SDK Build-Tools 36.0.0: Change compileSdk = 36
+
 <ins>Flutter (3.22.0)</ins>
 
 You may download from the official cite directly: https://docs.flutter.dev/install/archive
@@ -31,26 +41,31 @@ Android Studio: Settings -> Languages & Frameworks -> flutter -> flutter SDK pat
 
 ## Run & Build
 
-You may try the application in demo/app-release.apk.
+**Please use the application in demo/app-release.apk if there are any building issues.
 
 Android Studio (Please Choose one of the followings): 
 
-1.  Build -> Flutter -> Build Apk
-2.  Run Flutter Run "main.dart" in Release Mode
-3.  Click Debug 'main.dart'
+1.  Build -> Flutter -> Build Apk (Release Mode)
+2.  Run Flutter Run "main.dart" in Release Mode (Release Mode)
+3.  Click Debug 'main.dart' (Debug Mode)
 
 For the release mode, you may require a keystore.properties file inside the android folder
-1.  Generate the jks file, e.g.keytool -genkey -v -keystore my-release-key.jks -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+1.  Generate the jks file, keytool -genkey -v -keystore my-release-key.jks -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+    my-release-key is a file name only, alias_name can also modified to a desired name
+    
 2.  Set up the file as followings:
 
 ```txt
 storePassword=<password>
 keyPassword=<password>
 keyAlias=<alias_name>
-storeFile=<path/to/keystore.jks>
+storeFile=<path/to/my-release-key.jks>
 ```
 
 ## Notice
 This project focuses on Android only and may not build successfully for IOS even with Flutter codes.
 
-For more details related to versions, please nevigate to android/app/build.gradle.
+For more details related to versions, please nevigate to android/app/build.gradle and android/settings.gradle.
+
+The project may also be built successfully under other versions, please feel free to change the above files.
