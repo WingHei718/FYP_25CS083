@@ -4,8 +4,6 @@ This is the repository of a final year project. The Android application demostra
 
 ## Installation & Requirements
 
-<ins>Android SDK:</ins>
-
 <ins>Check Installed Java:</ins>
 
 Windows: Navigate to C:\Program Files\Java\ and C:\Program Files (x86)\Java\
